@@ -108,10 +108,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 911, y: 442}
-  m_MaxSize: {x: 22006, y: 10021}
+  m_MinSize: {x: 913, y: 442}
+  m_MaxSize: {x: 22008, y: 10021}
   vertical: 0
-  controlID: 690
+  controlID: 1863
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 691
+  controlID: 1978
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -368,14 +368,14 @@ MonoBehaviour:
     height: 656
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 0
-  lastFramingTime: 11864.500816987009
+  lastFramingTime: 304.38203071049423
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1353.8872, y: -632.11774, z: 1497.3623}
+    m_Target: {x: 1521.1003, y: 134.91165, z: 872.2833}
     speed: 2
-    m_Value: {x: 1353.8872, y: -632.11774, z: 1497.3623}
+    m_Value: {x: 1521.1003, y: 134.91165, z: 872.2833}
   m_RenderMode: 31
   m_CameraMode:
     drawMode: 31
@@ -383,12 +383,12 @@ MonoBehaviour:
     section: Miscellaneous
   m_ValidateTrueMetals: 0
   m_SceneViewState:
-    showFog: 1
-    showMaterialUpdate: 1
-    showSkybox: 1
-    showFlares: 1
-    showImageEffects: 1
-    showParticleSystems: 1
+    showFog: 0
+    showMaterialUpdate: 0
+    showSkybox: 0
+    showFlares: 0
+    showImageEffects: 0
+    showParticleSystems: 0
   grid:
     xGrid:
       m_Target: 0
@@ -403,13 +403,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.44113764, y: 0.13072762, z: -0.06512456, w: -0.8854754}
+    m_Target: {x: -0.4382496, y: 0.42652553, z: -0.24887946, w: -0.7510475}
     speed: 2
-    m_Value: {x: -0.44113764, y: 0.13072762, z: -0.06512456, w: -0.8854754}
+    m_Value: {x: -0.4382496, y: 0.42652553, z: -0.24887946, w: -0.7510475}
   m_Size:
-    m_Target: 1242.7821
+    m_Target: 564.776
     speed: 2
-    m_Value: 1242.7821
+    m_Value: 564.776
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -472,10 +472,10 @@ MonoBehaviour:
     height: 926
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 0c170000
-    m_LastClickedID: 0
-    m_ExpandedIDs: ecaefeff32c8feff5acafeff18e5feff8654ffff5060ffff6864ffffd46affff4e89ffff6499fffff8bbffffc8c6ffffa4efffff6cf2ffffe6fbffff00000000
+    scrollPos: {x: 0, y: 2042}
+    m_SelectedIDs: bcf3ffff
+    m_LastClickedID: -3140
+    m_ExpandedIDs: bef3ffffe6fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -536,20 +536,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Free Island Collection/Environment/Terrain/Terrains
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Free Island Collection/Environment/Terrain/Terrains
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\pc\Desktop\Map1test\Warcats---The-Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: aa140000
-    m_LastClickedID: 5290
-    m_ExpandedIDs: 00000000dc0b0000320d00006e0f00001e110000ba1300007e150000b6160000de160000fc21000028220000c2220000d4230000ba2500008e26000000ca9a3b
+    m_SelectedIDs: 48150000
+    m_LastClickedID: 5448
+    m_ExpandedIDs: 00000000c80c0000ce0c0000f40e00009c160000d8170000021800006c180000be1b0000281c0000c01c0000d82200006a23000050250000802500003e2700001a28000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -577,7 +577,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000dc0b0000e20b0000320d00006e0f00001e110000ba1300007e150000b6160000de160000fc21000028220000c2220000d4230000ba2500008e26000000ca9a3b
+    m_ExpandedIDs: 00000000c80c0000ce0c0000f40e00009c160000d8170000021800006c180000be1b0000281c0000c01c0000d82200006a23000050250000802500003e2700001a28000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -604,7 +604,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 1a3d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
