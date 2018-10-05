@@ -6,6 +6,23 @@ TagManager:
   tags:
   - ExcludeTeleport
   - Key
+  - Fire
+  - Arm
+  - Torso
+  - SnapCube
+  - Head
+  - SnapCylinder
+  - Leg
+  - Saucers
+  - Key2
+  - Fragment3
+  - Key1
+  - Door1
+  - Fragment1
+  - Fragment2
+  - Fragment4
+  - Gem
+  - Portal
   layers:
   - Default
   - TransparentFX
