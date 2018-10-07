@@ -23,6 +23,7 @@ TagManager:
   - Fragment4
   - Gem
   - Portal
+  - Hands
   layers:
   - Default
   - TransparentFX
