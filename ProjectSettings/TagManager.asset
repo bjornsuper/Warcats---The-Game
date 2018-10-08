@@ -24,6 +24,7 @@ TagManager:
   - Gem
   - Portal
   - Hands
+  - Quest
   layers:
   - Default
   - TransparentFX

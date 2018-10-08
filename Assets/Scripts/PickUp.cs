@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+
+
+    // Use this for initialization
+    void Start () {
+     
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -20,7 +22,7 @@ public class PickUp : MonoBehaviour {
         {
             PickUpSound.soundPlayed = true;
             Quests.gems = Quests.gems + 1;
-            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
         }
     }
 }
