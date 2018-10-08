@@ -18,11 +18,10 @@ public class PickUp : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Hands")
+        if (other.gameObject.tag == "Hands" & UI_Count.isqueststarted == true)
         {
             PickUpSound.soundPlayed = true;
-            Quests.gems = Quests.gems + 1;
-            //gameObject.SetActive(false);
+            gameObject.SetActive(false);
         }
     }
 }

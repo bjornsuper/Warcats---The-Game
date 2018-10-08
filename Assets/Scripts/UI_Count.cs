@@ -16,7 +16,7 @@ public class UI_Count : MonoBehaviour{
     public bool Quest = false;
     public bool hasWon = false;
 
-    private bool isqueststarted = false;
+    public static bool isqueststarted = false;
     private bool questdone = false;
     private bool winDone = false;
 
@@ -56,11 +56,8 @@ public class UI_Count : MonoBehaviour{
         
         if (other.gameObject.CompareTag("Gem") & isqueststarted == true)
         {
-            
-            gem = gem+1;
+            Quests.gems = Quests.gems + 1;
             SetCountText();
-            Debug.Log(gem);
-            other.gameObject.SetActive(false);
         }
     
 
@@ -68,8 +65,8 @@ public class UI_Count : MonoBehaviour{
 
     void SetCountText()
     {
-        countText.text = "Items: " + gem.ToString();
-        if (gem >= 6)
+        countText.text = "Items: " + Quests.gems.ToString();
+        if (Quests.gems >= 3)
         {
             winText.text = "Quest Completed";
             startText.text = "";
