@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UI_Count : MonoBehaviour{
+public class UICount : MonoBehaviour{
 
     public Text countText;
     public Text winText;

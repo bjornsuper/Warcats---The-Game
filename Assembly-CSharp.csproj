@@ -77,10 +77,10 @@
     <Compile Include="Assets\EmilsTestWorldofCatcraft\Scripts\QuestScripts\QuestController.cs" />
     <Compile Include="Assets\EmilsTestWorldofCatcraft\Scripts\QuestScripts\QuestTalk.cs" />
     <Compile Include="Assets\EmilsTestWorldofCatcraft\Scripts\TalkingCitizenTalkTrigger.cs" />
-    <Compile Include="Assets\GemScript.cs" />
     <Compile Include="Assets\Scripts\ActivatePortal.cs" />
     <Compile Include="Assets\Scripts\CastleMusic.cs" />
     <Compile Include="Assets\Scripts\EnteredCityCheck.cs" />
+    <Compile Include="Assets\Scripts\GemScript.cs" />
     <Compile Include="Assets\Scripts\HandsControllerScript.cs" />
     <Compile Include="Assets\Scripts\InteractScript.cs" />
     <Compile Include="Assets\Scripts\KingTalkingScript.cs" />
@@ -92,7 +92,7 @@
     <Compile Include="Assets\Scripts\PortalSceneScript.cs" />
     <Compile Include="Assets\Scripts\Quests.cs" />
     <Compile Include="Assets\Scripts\Rotate.cs" />
-    <Compile Include="Assets\Scripts\UI_Count.cs" />
+    <Compile Include="Assets\Scripts\UICount.cs" />
     <Compile Include="Assets\Scripts\UIQuest.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
