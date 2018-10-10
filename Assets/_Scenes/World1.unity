@@ -44078,9 +44078,9 @@ GameObject:
   - component: {fileID: 1505317301}
   - component: {fileID: 1505317303}
   - component: {fileID: 1505317302}
-  - component: {fileID: 1505317307}
   - component: {fileID: 1505317305}
   - component: {fileID: 1505317306}
+  - component: {fileID: 1505317308}
   m_Layer: 0
   m_Name: RightControllerScriptAlias
   m_TagString: Hands
@@ -44245,8 +44245,8 @@ MonoBehaviour:
   startText: {fileID: 1514624342}
   Quest: 0
   hasWon: 0
---- !u!65 &1505317307
-BoxCollider:
+--- !u!135 &1505317308
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -44255,7 +44255,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1506610928
 GameObject:
@@ -51826,9 +51826,9 @@ GameObject:
   - component: {fileID: 1806068836}
   - component: {fileID: 1806068835}
   - component: {fileID: 1806068834}
-  - component: {fileID: 1806068839}
   - component: {fileID: 1806068837}
   - component: {fileID: 1806068838}
+  - component: {fileID: 1806068840}
   m_Layer: 0
   m_Name: LeftControllerScriptAlias
   m_TagString: Hands
@@ -51993,8 +51993,8 @@ MonoBehaviour:
   startText: {fileID: 1514624342}
   Quest: 0
   hasWon: 0
---- !u!65 &1806068839
-BoxCollider:
+--- !u!135 &1806068840
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -52003,7 +52003,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1807769916
 Prefab:
