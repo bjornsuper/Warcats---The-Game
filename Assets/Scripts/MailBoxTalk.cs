@@ -28,7 +28,6 @@ public class MailBoxTalk : MonoBehaviour {
         }
     }
 
-    /*
     void OnTriggerExit(Collider other)
     {
         if (source.isPlaying)
@@ -36,5 +35,4 @@ public class MailBoxTalk : MonoBehaviour {
             source.Stop();
         }
     }
-    */
 }
