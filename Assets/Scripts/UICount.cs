@@ -46,7 +46,7 @@ public class UICount : MonoBehaviour{
         if (other.gameObject.CompareTag("Quest") & hasWon == false)
         {
 
-            startText.text = "Find the Crystals";
+            startText.text = "Find 3 Crystals, Crystals not Fish !";
             Quest = true;
             isqueststarted = true;
             hasWon = true;
@@ -65,7 +65,7 @@ public class UICount : MonoBehaviour{
 
     void SetCountText()
     {
-        countText.text = "Items: " + Quests.gems.ToString();
+        countText.text = "Crystals: " + Quests.gems.ToString();
         if (Quests.gems >= 3)
         {
             winText.text = "Quest Completed";

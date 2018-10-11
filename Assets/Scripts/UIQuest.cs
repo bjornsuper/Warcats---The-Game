@@ -13,7 +13,6 @@ public class UIQuest : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             customImage.enabled = true;
-            Debug.Log("something");
         }
     }
 
