@@ -698,12 +698,15 @@
     <Compile Include="Assets\World 3 (Boss)\Scripts\BattleMusic.cs" />
     <Compile Include="Assets\World 3 (Boss)\Scripts\BossAttributes.cs" />
     <Compile Include="Assets\World 3 (Boss)\Scripts\BossDead.cs" />
+    <Compile Include="Assets\World 3 (Boss)\Scripts\BossYell.cs" />
     <Compile Include="Assets\World 3 (Boss)\Scripts\CloseDoorScript.cs" />
     <Compile Include="Assets\World 3 (Boss)\Scripts\CounterAttack.cs" />
     <Compile Include="Assets\World 3 (Boss)\Scripts\CounterAttackSpawner.cs" />
     <Compile Include="Assets\World 3 (Boss)\Scripts\ElectricWallMove.cs" />
     <Compile Include="Assets\World 3 (Boss)\Scripts\FireBallScript.cs" />
     <Compile Include="Assets\World 3 (Boss)\Scripts\GameController.cs" />
+    <Compile Include="Assets\World 3 (Boss)\Scripts\HAX.cs" />
+    <Compile Include="Assets\World 3 (Boss)\Scripts\HCMode.cs" />
     <Compile Include="Assets\World 3 (Boss)\Scripts\PlayerLocation.cs" />
     <Compile Include="Assets\World 3 (Boss)\Scripts\PlayerToRigLocation.cs" />
     <Compile Include="Assets\World 3 (Boss)\Scripts\PortalToWorld4.cs" />

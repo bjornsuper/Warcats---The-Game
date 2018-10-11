@@ -9,6 +9,7 @@ public class CastleMusic : MonoBehaviour {
         if (other.gameObject.tag == "Player")
         {
             EnteredCityCheck.castleEntered = true;
+            gameObject.SetActive(false);
         }
     }
 }

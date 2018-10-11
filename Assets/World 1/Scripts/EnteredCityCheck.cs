@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EnteredCityCheck : MonoBehaviour {
 
-    public AudioSource source;
-    public AudioClip cityMusic;
+    private AudioSource source;
+    //public AudioClip cityMusic;
     public static bool castleEntered;
 
 
@@ -20,7 +20,8 @@ public class EnteredCityCheck : MonoBehaviour {
     {
         if (castleEntered == true & !source.isPlaying)
         {
-            source.PlayOneShot(cityMusic);
+            //source.PlayOneShot(cityMusic);
+            source.Play(0);
         }
     }
 }

@@ -7090,7 +7090,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 80d7a7566f40e5641afb954a9d70fdba, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.1
+  m_Volume: 0.04
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -7208,8 +7208,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c207a99e718be354eb06129d457fdf1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  source: {fileID: 0}
-  cityMusic: {fileID: 8300000, guid: 80d7a7566f40e5641afb954a9d70fdba, type: 3}
 --- !u!4 &240050616 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 57b1c6e5e6fd80c4f8ee1d5ccba246c8,
@@ -13149,9 +13147,9 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
-  MinDistance: 0
-  MaxDistance: 2.595337
+  DopplerLevel: 0
+  MinDistance: 1.0686035
+  MaxDistance: 3.1820679
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -13162,41 +13160,35 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
       value: 0.9916687
-      inSlope: -0.061797984
-      outSlope: -0.061797984
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.26966292
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.9300393
+      value: 0.93103826
+      inSlope: -0.1923513
+      outSlope: -0.1923513
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.10599405
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -0.82153857
+      outSlope: -0.82153857
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.3651685
+      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  spreadCustomCurve:
+  panLevelCustomCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
@@ -13211,12 +13203,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.07865143
-      value: 0.67499924
+      time: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -24058,6 +24065,7 @@ GameObject:
   - component: {fileID: 791644850}
   - component: {fileID: 791644853}
   - component: {fileID: 791644854}
+  - component: {fileID: 791644855}
   m_Layer: 0
   m_Name: OVRCameraRig
   m_TagString: Player
@@ -24128,6 +24136,19 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 1.26, z: 0}
+--- !u!114 &791644855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 791644849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e293302509811243bc4d051ac131ba0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1677989220}
+  jumpPuzzleReset: {fileID: 0}
 --- !u!1001 &793648079
 Prefab:
   m_ObjectHideFlags: 0
@@ -34189,6 +34210,22 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.8693313
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 775bfa83459dc204eb607718365a381c, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 775bfa83459dc204eb607718365a381c, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 775bfa83459dc204eb607718365a381c, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 775bfa83459dc204eb607718365a381c, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 775bfa83459dc204eb607718365a381c, type: 3}
   m_IsPrefabAsset: 0
@@ -40599,9 +40636,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1317005450}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c413ee53e6f5a484b98fcfc6333c1c77, type: 3}
+  m_Script: {fileID: 11500000, guid: 9e293302509811243bc4d051ac131ba0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1677989220}
+  jumpPuzzleReset: {fileID: 0}
 --- !u!136 &1317005454
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -43350,7 +43389,7 @@ GameObject:
   - component: {fileID: 1431794148}
   - component: {fileID: 1431794147}
   - component: {fileID: 1431794146}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ColiderPortal
   m_TagString: PortalColider
   m_Icon: {fileID: 0}
@@ -47633,7 +47672,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d50a8b86fc658e04cae2e61842ab4595, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.04
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -47957,9 +47996,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1579567118}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c413ee53e6f5a484b98fcfc6333c1c77, type: 3}
+  m_Script: {fileID: 11500000, guid: 9e293302509811243bc4d051ac131ba0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1677989220}
+  jumpPuzzleReset: {fileID: 0}
 --- !u!136 &1579567121
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -48497,6 +48538,22 @@ Prefab:
     - target: {fileID: 400002, guid: 775bfa83459dc204eb607718365a381c, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.74107
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 775bfa83459dc204eb607718365a381c, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 775bfa83459dc204eb607718365a381c, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 775bfa83459dc204eb607718365a381c, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 775bfa83459dc204eb607718365a381c, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 775bfa83459dc204eb607718365a381c, type: 3}
@@ -55304,9 +55361,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1839348315}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c413ee53e6f5a484b98fcfc6333c1c77, type: 3}
+  m_Script: {fileID: 11500000, guid: 9e293302509811243bc4d051ac131ba0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1677989220}
+  jumpPuzzleReset: {fileID: 0}
 --- !u!136 &1839348319
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -56019,9 +56078,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1858127583}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c413ee53e6f5a484b98fcfc6333c1c77, type: 3}
+  m_Script: {fileID: 11500000, guid: 9e293302509811243bc4d051ac131ba0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1677989220}
+  jumpPuzzleReset: {fileID: 0}
 --- !u!1 &1858409735 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 29e40ab38a9e80c4c97af51e1991328f,
@@ -59440,9 +59501,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1984428883}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68c87be651a0cdf4da949085a6020440, type: 3}
+  m_Script: {fileID: 11500000, guid: fa50cfcd5e8971f48a15548e07f44d26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  steamVRRig: {fileID: 1858127577}
+  simulationRig: {fileID: 1839348316}
+  oculusRig: {fileID: 791644852}
+  windowsMRRig: {fileID: 1579567119}
+  unityXRRig: {fileID: 1317005451}
+  steamVRObj: {fileID: 1858127583}
+  simulationrigObj: {fileID: 1839348315}
+  oculusObj: {fileID: 791644849}
+  windowsMRObj: {fileID: 1579567118}
+  unityXRObj: {fileID: 1317005450}
 --- !u!4 &1984428885
 Transform:
   m_ObjectHideFlags: 0

@@ -202,7 +202,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boss: {fileID: 0}
   speed: 20
-  damage: 50
+  damage: 9
 --- !u!114 &114315289139335440
 MonoBehaviour:
   m_ObjectHideFlags: 1

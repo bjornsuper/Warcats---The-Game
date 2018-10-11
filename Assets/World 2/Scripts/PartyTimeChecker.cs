@@ -19,7 +19,6 @@ public class PartyTimeChecker : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
         if (partytime) {
             partyDragon.SetActive(true);
             partyGuests.SetActive(true);

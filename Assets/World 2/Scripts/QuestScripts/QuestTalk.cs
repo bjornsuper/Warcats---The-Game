@@ -9,10 +9,12 @@ public class QuestTalk : MonoBehaviour
     public AudioClip givesQuest;
     public AudioClip questCompleate;
     private bool givesQuestPlayed = false;
+    private bool saidThanks;
 
     // Use this for initialization
     void Start()
     {
+        saidThanks = false;
         source = GetComponent<AudioSource>();
     }
 
@@ -29,8 +31,9 @@ public class QuestTalk : MonoBehaviour
             source.PlayOneShot(givesQuest);
             givesQuestPlayed = true;
         }
-        else if (PartyTimeChecker.partytime & !source.isPlaying) {
+        else if (PartyTimeChecker.partytime & !source.isPlaying & saidThanks == false) {
             source.PlayOneShot(questCompleate);
+            saidThanks = true;
         }
     }
 }

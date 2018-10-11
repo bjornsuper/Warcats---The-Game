@@ -22,7 +22,7 @@ public class Fragment2Sound : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if ((other.gameObject.tag == "Player" || other.gameObject.tag == "Hands") & JukeBoxScript.jukeBoxCurrentlyPlaying == false & !source.isPlaying)
         {
             source.PlayOneShot(fragmentClip);
         }

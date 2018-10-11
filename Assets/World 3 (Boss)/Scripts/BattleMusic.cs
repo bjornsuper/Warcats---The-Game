@@ -12,7 +12,6 @@ public class BattleMusic : MonoBehaviour {
     private static bool created = false;
     private static bool playing = false;
 
-
     // Use this for initialization
     void Start()
     {
