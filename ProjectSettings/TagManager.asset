@@ -25,6 +25,12 @@ TagManager:
   - Portal
   - Hands
   - Quest
+  - PartyGuests
+  - PartyDragon
+  - Boss
+  - NoTPWalls
+  - PrefabCounterAttack
+  - PortalColider
   layers:
   - Default
   - TransparentFX
