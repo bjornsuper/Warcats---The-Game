@@ -28,11 +28,13 @@ public class KingTalkingScript : MonoBehaviour {
     {
         gems = Quests.gems;
 
+        /*
         if (!source.isPlaying)
         {
             source.UnPause();
             //Debug.Log("its playing");
         }
+        */
 
         if (other.gameObject.tag == "Player" & audioClip1Played == false & !source.isPlaying)
         {
@@ -45,14 +47,33 @@ public class KingTalkingScript : MonoBehaviour {
             source.PlayOneShot(theKingsReward);
             ActivatePortal.activatePortal();
         }
+
+
+        
+        if (other.gameObject.tag == "Player" & audioClip2Played == false & !source.isPlaying & gems >= 3)
+        {
+            audioClip2Played = true;
+            source.PlayOneShot(theKingsReward);
+            ActivatePortal.activatePortal();
+        }
+        else if (other.gameObject.tag == "Player" /*& audioClip1Played == false*/ & !source.isPlaying)
+        {
+            audioClip1Played = true;
+            source.PlayOneShot(theKingsQuest);
+        }
+
+
+
         //Debug.Log("Entered");
     }
 
     void OnTriggerExit(Collider other)
     {
+        /*
         if (source.isPlaying)
         {
             source.Pause();
         }
+        */
     }
 }

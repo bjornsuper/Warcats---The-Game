@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BossYell : MonoBehaviour {
 
@@ -8,12 +9,14 @@ public class BossYell : MonoBehaviour {
     private AudioSource source;
     private static bool clipPlayed;
     private static bool created;
+    Scene currentScene;
 
     // Use this for initialization
     void Start()
     {
         created = false;
         source = GetComponent<AudioSource>();
+        currentScene = SceneManager.GetActiveScene();
         //StartCoroutine(getPlayerLocation());
     }
 
@@ -26,12 +29,19 @@ public class BossYell : MonoBehaviour {
         }
     }
 
+
+
     // Update is called once per frame
     void Update()
     {
         if (BossAttributes.encounterStartet == true & clipPlayed == false) {
             source.PlayOneShot(bossYell);
             clipPlayed = true;
+        }
+
+        if (currentScene.name != "World 3 (Boss)")
+        {
+            Destroy(gameObject);
         }
     }
 

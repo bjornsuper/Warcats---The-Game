@@ -11,11 +11,13 @@ public class BattleMusic : MonoBehaviour {
 
     private static bool created = false;
     private static bool playing = false;
+    Scene currentScene;
 
     // Use this for initialization
     void Start()
     {
         source = GetComponent<AudioSource>();
+        currentScene = SceneManager.GetActiveScene();
     }
 
     private void Awake()
@@ -35,6 +37,12 @@ public class BattleMusic : MonoBehaviour {
             source.Play(0);
             playing = true;
         }
+
+        if (currentScene.name != "World 3 (Boss)")
+        {
+            Destroy(gameObject);
+        }
+        
 
 
         /*

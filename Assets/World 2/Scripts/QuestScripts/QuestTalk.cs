@@ -26,12 +26,12 @@ public class QuestTalk : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player" & givesQuestPlayed == false & !source.isPlaying & !PartyTimeChecker.partytime)
+        if (other.gameObject.tag == "Player" /*& givesQuestPlayed == false*/ & !source.isPlaying & !PartyTimeChecker.partytime)
         {
             source.PlayOneShot(givesQuest);
             givesQuestPlayed = true;
         }
-        else if (PartyTimeChecker.partytime & !source.isPlaying & saidThanks == false) {
+        else if (other.gameObject.tag == "Player" & PartyTimeChecker.partytime & !source.isPlaying & saidThanks == false) {
             source.PlayOneShot(questCompleate);
             saidThanks = true;
         }
