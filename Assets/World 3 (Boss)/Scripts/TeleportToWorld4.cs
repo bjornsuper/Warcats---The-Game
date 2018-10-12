@@ -20,8 +20,11 @@ public class TeleportToWorld4 : MonoBehaviour {
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player") {
-            amTeleporting = true;
+            SceneManager.LoadScene(3);
+
+            /*amTeleporting = true;
             StartCoroutine(teleportToWorld4());
+            */
         }
     }
 

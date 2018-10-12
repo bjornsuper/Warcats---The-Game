@@ -61,7 +61,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\PillarsController.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />
@@ -634,6 +633,21 @@
     <Compile Include="Assets\World 2\Scripts\DisableBlocker.cs" />
     <Compile Include="Assets\World 2\Scripts\MoveToLocation.cs" />
     <Compile Include="Assets\World 2\Scripts\PartyTimeChecker.cs" />
+    <Compile Include="Assets\World 2\Scripts\PillarEvent\Pillar10Controller.cs" />
+    <Compile Include="Assets\World 2\Scripts\PillarEvent\Pillar11Controller.cs" />
+    <Compile Include="Assets\World 2\Scripts\PillarEvent\Pillar12Controller.cs" />
+    <Compile Include="Assets\World 2\Scripts\PillarEvent\Pillar13Controller.cs" />
+    <Compile Include="Assets\World 2\Scripts\PillarEvent\Pillar14Controller.cs" />
+    <Compile Include="Assets\World 2\Scripts\PillarEvent\Pillar1Controller.cs" />
+    <Compile Include="Assets\World 2\Scripts\PillarEvent\Pillar2Controller.cs" />
+    <Compile Include="Assets\World 2\Scripts\PillarEvent\Pillar3Controller.cs" />
+    <Compile Include="Assets\World 2\Scripts\PillarEvent\Pillar4Controller.cs" />
+    <Compile Include="Assets\World 2\Scripts\PillarEvent\Pillar5Controller.cs" />
+    <Compile Include="Assets\World 2\Scripts\PillarEvent\Pillar6Controller.cs" />
+    <Compile Include="Assets\World 2\Scripts\PillarEvent\Pillar7Controller.cs" />
+    <Compile Include="Assets\World 2\Scripts\PillarEvent\Pillar8Controller.cs" />
+    <Compile Include="Assets\World 2\Scripts\PillarEvent\Pillar9Controller.cs" />
+    <Compile Include="Assets\World 2\Scripts\PillarEvent\StartPillarEvent.cs" />
     <Compile Include="Assets\World 2\Scripts\QuestScripts\Fragment1Controller.cs" />
     <Compile Include="Assets\World 2\Scripts\QuestScripts\Fragment1Sound.cs" />
     <Compile Include="Assets\World 2\Scripts\QuestScripts\Fragment2Controller.cs" />
@@ -698,11 +712,13 @@
     <Compile Include="Assets\World 3 (Boss)\Scripts\BattleMusic.cs" />
     <Compile Include="Assets\World 3 (Boss)\Scripts\BossAttributes.cs" />
     <Compile Include="Assets\World 3 (Boss)\Scripts\BossDead.cs" />
+    <Compile Include="Assets\World 3 (Boss)\Scripts\BossHealthUI.cs" />
     <Compile Include="Assets\World 3 (Boss)\Scripts\BossYell.cs" />
     <Compile Include="Assets\World 3 (Boss)\Scripts\CloseDoorScript.cs" />
     <Compile Include="Assets\World 3 (Boss)\Scripts\CounterAttack.cs" />
     <Compile Include="Assets\World 3 (Boss)\Scripts\CounterAttackSpawner.cs" />
     <Compile Include="Assets\World 3 (Boss)\Scripts\ElectricWallMove.cs" />
+    <Compile Include="Assets\World 3 (Boss)\Scripts\ExplotionSound.cs" />
     <Compile Include="Assets\World 3 (Boss)\Scripts\FireBallScript.cs" />
     <Compile Include="Assets\World 3 (Boss)\Scripts\GameController.cs" />
     <Compile Include="Assets\World 3 (Boss)\Scripts\HAX.cs" />

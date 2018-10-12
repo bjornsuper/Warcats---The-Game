@@ -308,7 +308,7 @@ MonoBehaviour:
   counterAttackSound: {fileID: 8300000, guid: a9600ea8f5a97f84dbfc379c73303c79, type: 3}
   boss: {fileID: 0}
   speed: 20
-  damage: 50
+  damage: 10
 --- !u!114 &114315289139335440
 MonoBehaviour:
   m_ObjectHideFlags: 1

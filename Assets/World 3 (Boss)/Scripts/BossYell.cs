@@ -8,15 +8,13 @@ public class BossYell : MonoBehaviour {
     public AudioClip bossYell;
     private AudioSource source;
     private static bool clipPlayed;
-    private static bool created;
+    private static bool created = false;
     Scene currentScene;
 
     // Use this for initialization
     void Start()
     {
-        created = false;
         source = GetComponent<AudioSource>();
-        currentScene = SceneManager.GetActiveScene();
         //StartCoroutine(getPlayerLocation());
     }
 
@@ -34,6 +32,7 @@ public class BossYell : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        currentScene = SceneManager.GetActiveScene();
         if (BossAttributes.encounterStartet == true & clipPlayed == false) {
             source.PlayOneShot(bossYell);
             clipPlayed = true;
@@ -45,11 +44,12 @@ public class BossYell : MonoBehaviour {
         }
     }
 
-
+    /*
     IEnumerator getPlayerLocation()
     {
         yield return new WaitForSeconds(3);
         source.PlayOneShot(bossYell);
         clipPlayed = true;
     }
+    */
 }

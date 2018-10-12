@@ -17,7 +17,6 @@ public class BattleMusic : MonoBehaviour {
     void Start()
     {
         source = GetComponent<AudioSource>();
-        currentScene = SceneManager.GetActiveScene();
     }
 
     private void Awake()
@@ -31,7 +30,8 @@ public class BattleMusic : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (arenaEntered == true & !source.isPlaying & playing == false & TeleportToWorld4.amTeleporting == false)
+        currentScene = SceneManager.GetActiveScene();
+        if (arenaEntered == true & !source.isPlaying & playing == false /*& TeleportToWorld4.amTeleporting == false*/)
         {
             //source.PlayOneShot(battleMusic);
             source.Play(0);
@@ -43,8 +43,6 @@ public class BattleMusic : MonoBehaviour {
             Destroy(gameObject);
         }
         
-
-
         /*
         if (Input.GetKeyDown("space")) {
             //Debug.Log("loll");
@@ -52,9 +50,11 @@ public class BattleMusic : MonoBehaviour {
             source.Stop();
         }
         */
+        /*
         if (TeleportToWorld4.amTeleporting == true)
         {
             source.Stop();
         }
+        */
     }
 }

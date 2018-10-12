@@ -48,6 +48,7 @@ public class CounterAttack : MonoBehaviour {
                 }
                 //Debug.Log(BossAttributes.isBossAlive);
                 //Debug.Log(BossAttributes.health);
+                ExplotionSound.hasExploded = true;
                 Destroy(gameObject);
             }
         }
