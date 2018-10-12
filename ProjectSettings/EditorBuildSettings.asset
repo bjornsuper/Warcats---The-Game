@@ -8,19 +8,19 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Scenes/World 1.unity
     guid: 565db450102e511409619c0e510f2f11
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Scenes/World 2.unity
     guid: 46391fc3fa38e1543a94a5f8b9de6e19
   - enabled: 1
     path: Assets/_Scenes/World 3 (Boss).unity
     guid: 2af604d2c276b4e449379c1e67050396
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Scenes/World 4.unity
     guid: e060d8e4a315f874283ad0682c9d905d
   m_configObjects: {}
