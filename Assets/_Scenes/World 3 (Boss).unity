@@ -4286,7 +4286,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.25
+  m_Radius: 0.1
   m_Height: 1.5
   m_Direction: 1
   m_Center: {x: 0, y: 0.79, z: 0}
@@ -4941,7 +4941,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.25
+  m_Radius: 0.1
   m_Height: 1.5
   m_Direction: 1
   m_Center: {x: 0, y: 0.79, z: 0}
@@ -9692,7 +9692,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.25
+  m_Radius: 0.1
   m_Height: 1.5
   m_Direction: 1
   m_Center: {x: 0, y: 0.79, z: 0}
@@ -11083,7 +11083,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.25
+  m_Radius: 0.1
   m_Height: 1.5
   m_Direction: 1
   m_Center: {x: 0, y: 0.79, z: 0}
@@ -13113,7 +13113,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4907289376524780, guid: 9fbc2dfc136bd1844b78fce36ff8c857, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1915035260964088, guid: 9fbc2dfc136bd1844b78fce36ff8c857, type: 2}
       propertyPath: m_IsActive
@@ -14374,7 +14374,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.25
+  m_Radius: 0.1
   m_Height: 1.5
   m_Direction: 1
   m_Center: {x: 0, y: 0.79, z: 0}
@@ -16359,7 +16359,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4563522435679512, guid: 08df6e3d40699c640ba94f712d4b1498, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1156072845325734, guid: 08df6e3d40699c640ba94f712d4b1498, type: 2}
       propertyPath: m_IsActive

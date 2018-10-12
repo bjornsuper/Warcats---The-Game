@@ -6,6 +6,10 @@ public class CounterAttack : MonoBehaviour {
 
     private GameObject go;
 
+    public AudioClip counterAttackSound;
+
+    private AudioSource source;
+
     public Transform boss;
 
     public float speed;
@@ -18,6 +22,7 @@ public class CounterAttack : MonoBehaviour {
     void Start () {
         go = GameObject.Find("BossLocation");
         boss = go.transform;
+        source = GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
@@ -55,9 +60,9 @@ public class CounterAttack : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player" || other.gameObject.tag == "Hands")
+        if ((other.gameObject.tag == "Player" || other.gameObject.tag == "Hands") & !source.isPlaying)
         {
-            //Debug.Log("HE SEES THE PLAYER");
+            source.PlayOneShot(counterAttackSound);
             playerShot = true;
         }
     }

@@ -19,15 +19,15 @@ public class TeleportToWorld4 : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
-        amTeleporting = true;
-        StartCoroutine(teleportToWorld4());
-        
+        if (other.gameObject.tag == "Player") {
+            amTeleporting = true;
+            StartCoroutine(teleportToWorld4());
+        }
     }
 
     IEnumerator teleportToWorld4()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
         SceneManager.LoadScene(3);
     }
 }

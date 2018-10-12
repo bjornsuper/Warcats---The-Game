@@ -29,7 +29,7 @@ public class BattleMusic : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (arenaEntered == true & !source.isPlaying & playing == false)
+        if (arenaEntered == true & !source.isPlaying & playing == false & TeleportToWorld4.amTeleporting == false)
         {
             //source.PlayOneShot(battleMusic);
             source.Play(0);

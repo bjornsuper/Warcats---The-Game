@@ -21,7 +21,6 @@ public class UICount : MonoBehaviour{
     private bool winDone = false;
 
 
-
     // Use this for initialization
     void Start()
     {
@@ -58,6 +57,8 @@ public class UICount : MonoBehaviour{
         {
             Quests.gems = Quests.gems + 1;
             SetCountText();
+            other.gameObject.SetActive(false);
+            //Debug.Log(Quests.gems);
         }
     
 
