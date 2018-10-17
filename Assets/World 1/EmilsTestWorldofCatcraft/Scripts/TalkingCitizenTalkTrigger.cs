@@ -27,7 +27,7 @@ public class TalkingCitizenTalkTrigger : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        key1 = PlayerController.key1;
+        key1 = PlayerControllerTestWorld.key1;
 
         if (!source.isPlaying)
         {
